@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohan</title>
+    <style>
+      .form,
+      .batch-container,
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="header"><h1>01.Application Form</h1></div>
+      <form action="">
+        <div class="form">
+          <div class="name-field">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="email-field">
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div class="Gender-field">
+            <label for="Gender"> Gender : </label>
+            <input type="radio" name="option" />
+            <label for="option1">Male</label>
+            <input type="radio" name="option" />
+            <label for="option2">Female</label>
+          </div>
+          <div class="skills-field">
+            <p>CHOOSE SKILLS</p>
+            <input type="checkbox" name="skill" />
+            <label for="option1">HTML</label>
+            <input type="checkbox" name="skill" />
+            <label for="option2">CSS</label>
+            <input type="checkbox" name="skill" />
+            <label for="option1">JS</label>
+            <input type="checkbox" name="skill" />
+            <label for="option2">Boostrap</label>
+            <input type="checkbox" name="skill" />
+            <label for="option2">React</label>
+          </div>
+          <div class="Job-Type-field">
+            <label for="name">JOB TYPE</label>
+            <select name="JOB TYPE" id="">
+              <option value="frontend">FRONT END DEVELOPPER</option>
+              <option value="Backend">BACK END DEVELOPPER</option>
+            </select>
+          </div>
+          <div class="Choose-your-browser-from-the-list">
+            <label for="name">Choose your browser from the list</label>
+            <input type="text" />
+          </div>
+          <div>
+            <textarea name="" id="" cols="20" rows="3">
+Give a brief summary about you</textarea
+            >
+          </div>
+          <div><button>Submit</button></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="batch-container">
+      <h1 class="header">02.Batch List</h1>
+      <li>SENCHOLA UNIVERSITY</li>
+      <div class="lists">
+        <ol>
+          <li>First Batch</li>
+          <ol>
+            <li type="A">Ravi</li>
+            <li type="A">Manol</li>
+            <li type="A">Santhiya</li>
+          </ol>
+          <li>Second Batch</li>
+          <ol>
+            <li type="I">Ravi</li>
+            <li type="I">Manol</li>
+            <li type="I">Santhiya</li>
+          </ol>
+          <li>Third Batch</li>
+          <ol>
+            <li type="i">Ravi</li>
+            <li type="i">Manol</li>
+            <li type="i">Santhiya</li>
+          </ol>
+        </ol>
+      </div>
+    </div>
+
+    <div class="table">
+    <h1>03.Courses</h1>
+      <table>
+        <tr>
+          <th>s.NO 1</th>
+          <th>s.NO 2</th>
+          <th>s.NO 3</th>
+          <th>s.NO 4</th>
+        </tr>
+        <tr>
+          <td rowspan="2">REACT JS</td>
+          <td>HTML</td>
+          <td rowspan="2">REACT JS</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td colspan="2">BOOTSTRAP</td>
+          <td colspan="2">BOOTSTRAP</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
